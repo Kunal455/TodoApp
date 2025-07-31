@@ -53,9 +53,10 @@ const PORT = process.env.PORT || 8000
 
 //Listen
 
-app.listen(PORT, () => {
-  console.log(`server is running for ${process.env.DEV} on ${PORT}`.bgMagenta)
-})
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`server is running for ${process.env.DEV} on ${PORT}`.bgMagenta);
+});
+
 
 
 app.use((req, res) => {

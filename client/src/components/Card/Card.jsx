@@ -23,7 +23,7 @@ const handledelete = async (id) => {
     }
 
     // Set Authorization header once per request
-    await axios.delete(`http://localhost:8080/api/v1/todo/Delete/${id}`, {
+    await axios.delete(`https://todoapp-ud7u.onrender.com/api/v1/todo/Delete/${id}`, {
       headers: {
         Authorization: `Bearer ${userData.token}`,
       },

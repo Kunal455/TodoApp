@@ -26,7 +26,7 @@ const Login = () => {
 
 
   try {
-    const res = await axios.post('http://localhost:8080/api/v1/user/login', {
+    const res = await axios.post('https://todoapp-ud7u.onrender.com/api/v1/user/login', {
       email,
       password
     });

@@ -29,7 +29,7 @@ const Edit = ({task, setshowmodel, getTodoAll}) => {
         }
 
       
-       await axios.patch("http://localhost:8080/api/v1/todo/Update/" + id, {
+       await axios.patch("https://todoapp-ud7u.onrender.com/api/v1/todo/Update/" + id, {
         title,
         description,
         createdby,
